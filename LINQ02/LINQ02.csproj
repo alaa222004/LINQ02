@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="E:\Program.cs" Link="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="obj\Customers.xml" />
     <None Include="obj\dictionary_english.txt" />
   </ItemGroup>
