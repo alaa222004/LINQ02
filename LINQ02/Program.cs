@@ -99,7 +99,17 @@ namespace LINQ02
 
             #endregion
 
-          
+            #region Q6P2
+            //6.Get the length of the shortest word in dictionary_english.txt
+            //    (Read dictionary_english.txt into Array of String First).
+
+            string[] word = File.ReadAllLines("dictionary_english.txt");
+            int shortest = word.Min(w => w.Length);
+            shortest.Print();
+
+
+
+            #endregion
         }
     }
 }
