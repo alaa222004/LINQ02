@@ -110,6 +110,16 @@ namespace LINQ02
 
 
             #endregion
+
+            #region Q7P2
+            //7.Get the length of the longest word in dictionary_english.txt
+            //    (Read dictionary_english.txt into Array of String First).
+
+            string[] wordd = File.ReadAllLines("dictionary_english.txt");
+            int longest=wordd.Max(m=>m.Length);
+            longest.Print();
+
+            #endregion
         }
     }
 }
