@@ -3,7 +3,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using static ASSLINQ.ListGenerators;
 
 namespace LINQ02
@@ -41,6 +43,14 @@ namespace LINQ02
 
 
 
+
+            #endregion
+
+            #region Q1P2
+            //1.Uses Count to get the number of odd numbers in the array
+int[] Arr2 = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            Arr2.Count(x => x % 2 != 0).Print();
+            
 
             #endregion
         }

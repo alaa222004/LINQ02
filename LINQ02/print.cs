@@ -9,6 +9,7 @@ namespace LINQ02
 {
     public static class Extensions
     {
+        public static void Print(this object obj)=>Console.WriteLine(obj);
         public static void Print<T>(this IEnumerable<T> collection)
         {
             if (collection is IEnumerable<char> && collection is string str)
