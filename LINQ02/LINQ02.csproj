@@ -5,4 +5,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="obj\Customers.xml" />
+    <None Include="obj\dictionary_english.txt" />
+  </ItemGroup>
+
 </Project>
