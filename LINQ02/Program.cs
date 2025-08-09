@@ -130,6 +130,20 @@ namespace LINQ02
             AVR.Print();
 
             #endregion
+
+            #region Q9P2
+            //9.Get the total units in stock for each product category.
+
+            var result = ProductList.GroupBy(p => p.Category)
+                .Select(g => new
+    {
+                 Category = g.Key,
+                TotalUnitsInStock = g.Sum(p => p.UnitsInStock)
+    });
+
+            result.Print();
+
+            #endregion
         }
     }
 }
