@@ -77,6 +77,14 @@ int[] Arr2 = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
             cat.Print();
 
             #endregion
+
+            #region Q4P2
+            //4.Get the total of the numbers in an array.
+int[] Arr3 = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            var arr3 = Arr3.Sum();
+            arr3.Print();
+
+            #endregion
         }
     }
 }
