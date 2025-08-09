@@ -120,6 +120,16 @@ namespace LINQ02
             longest.Print();
 
             #endregion
+
+            #region Q8P2
+            //8.Get the average length of the words in dictionary_english.txt
+            //    (Read dictionary_english.txt into Array of String First).
+
+            string[] worddd = File.ReadAllLines("dictionary_english.txt");
+            double AVR = worddd.Average(m => m.Length);
+            AVR.Print();
+
+            #endregion
         }
     }
 }
