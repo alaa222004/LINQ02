@@ -62,7 +62,19 @@ int[] Arr2 = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
                 c.CustomerName,
                 c.Orders
             });res.Print();
-           
+
+
+            #endregion
+
+            #region Q3P2
+            //3.Return a list of categories and how many products each has
+
+            var cat = ProductList.GroupBy(p => p.Category).Select(g => new
+            {
+                Category= g.Key,
+                proudectcount=g.Count()
+            });
+            cat.Print();
 
             #endregion
         }
