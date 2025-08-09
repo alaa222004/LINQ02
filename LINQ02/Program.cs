@@ -30,6 +30,19 @@ namespace LINQ02
             Console.WriteLine(p);
 
             #endregion
+            #region Q3
+            //3.Retrieve the second number greater than 5
+             int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            var secnum = Arr.Where(n => n > 5)
+                .Skip(1).First();
+            Console.WriteLine(secnum);
+
+
+
+
+
+
+            #endregion
         }
-        }
+    }
 }
