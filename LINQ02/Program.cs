@@ -50,7 +50,19 @@ namespace LINQ02
             //1.Uses Count to get the number of odd numbers in the array
 int[] Arr2 = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
             Arr2.Count(x => x % 2 != 0).Print();
-            
+
+
+            #endregion
+
+            #region Q2P2
+            //2.Return a list of customers and how many orders each has.
+
+            var res = CustomerList.Select(c => new
+            {
+                c.CustomerName,
+                c.Orders
+            });res.Print();
+           
 
             #endregion
         }
